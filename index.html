@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+
+        <title> WEBSITE DESIGN </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    
+    </head>
+
+    <body>
+        <div class="main">
+            <nav>
+                <div class="img-logo">
+                    <img src="images/DesignCode-Logo-Black.png">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>    
+                        <li><a href="#">About Us</a></li>    
+                    <ul>
+                </div>
+            </nav>
+
+            <div class="information">
+                <div class="overlay"></div>
+                <img class="mobile" src="images/MacPro.png">
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="images/Image 1.png">
+                        <div>
+                            <h1>Feature 1</h1>
+                            <p>12MP, Wide Angle Lens</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="images/Image 1.png">
+                        <div>
+                            <h1>Feature 2</h1>
+                            <p>12MP, Wide Angle Lens</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="images/Image 1.png">
+                        <div>
+                            <h1>Feature 3</h1>
+                            <p>12MP, Wide Angle Lens</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="images/Image 1.png">
+                        <div>
+                            <h1>Feature 4</h1>
+                            <p>12MP, Wide Angle Lens</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow">
+                <img id="upArrow" src="images/Downloads-videos.png">
+                <h3>Features</h3>
+                <img id="downArrow" src="images/Downloads-videos.png">
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var upArrow = document.getElementById("upArrow");
+        var downArrow = document.getElementById("downArrow");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upArrow.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+            console.log(rotateValue);
+        }
+
+        downArrow.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+            console.log(rotateValue);
+        }
+
+        
+
+    </script>
+
+</html>
+
